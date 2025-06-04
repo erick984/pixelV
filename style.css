@@ -198,32 +198,31 @@ header .container-grid {
 
 }
 
-.linha-roxa{
+.linha-roxa {
     position: absolute;
     z-index: -1;
     height: 250px;
     width: 100vw;
-    background: linear-gradient(0deg, rgba(36, 0, 105,1)0%, rgba(71, 0, 207, 1)
-100% );
+    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%, rgba(71, 0, 207, 1) 100%);
 }
 
 #servicos .card {
-width: 300px;
-margin: 20px;
-padding: 40px 20px;
-border-radius: 40px;
-background-color: #F2F2F2;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-text-align: center;
+    width: 300px;
+    margin: 20px;
+    padding: 40px 20px;
+    border-radius: 40px;
+    background-color: #F2F2F2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
 
-display: flex;  
-flex-direction: column;
-align-items: center;
-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#servicos .card h3{
-    font-size: 24px ;
+#servicos .card h3 {
+    font-size: 24px;
     margin: 5px 0 30px;
     color: var(--roxo-pixelV);
     font-family: "Recurcive", sans- linear-bold;
@@ -231,40 +230,40 @@ justify-content: center;
 
 }
 
-#servicos .card p{
+#servicos .card p {
     font-family: "Recurcive", sans-linear;
-    font-size: 18px ;
+    font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.5;
 }
 
-#servicos .card svg{
+#servicos .card svg {
     color: var(--roxo-pixelV);
     height: 75px;
 }
 
-#servicos .card:hover{
+#servicos .card:hover {
     border: solid 3px var(--verde-pixelV);
 
 }
 
-#servicos .card:hover h3{
+#servicos .card:hover h3 {
     color: var(--verde-pixelV);
 
 }
 
-#servicos .card:hover svg{
+#servicos .card:hover svg {
     fill: var(--verde-pixelV);
 
 }
 
 /* ---------------Cases de Sucesso------------- */
 
-#cases h2{
+#cases h2 {
     margin-right: 5px;
 }
 
-#cases{
+#cases {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -272,12 +271,152 @@ justify-content: center;
     margin-bottom: 120px;
 }
 
-#cases img{
+#cases img {
     height: 300px;
     border-radius: 40px;
 }
 
-#meuCarrossel{
+#meuCarrossel {
     max-width: 1170px;
     width: 90%;
+}
+
+
+/* -------------contato------------ */
+
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px
+}
+
+#contato .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+
+}
+
+#contato h2 {
+    margin-left: 5px;
+}
+
+#contato form {
+    width: 90%;
+    max-width: 980px;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 40px;
+    background-color: var(--Contato);
+    border: solid 3px var(--roxo-pixelV);
+
+    color: var(--preto);
+    font-family: "Recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+
+}
+
+.campo-descricao {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
+}
+
+.campo input {
+    height: 40px;
+
+    color: var(--preto);
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+
+    outline: none;
+}
+
+
+.campo-descricao textarea {
+    color: var(--preto);
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo-lable,
+.campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo-descricao textarea {
+    font-family: "Recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo input::placeholder
+.campo-descricao textarea::placeholder{
+    color: #a0a0a0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus{
+    outline: 2px solid var(--verde-pixelV);
+}
+
+#contato form button{
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--roxo-pixelV);
+    color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Recursive", sans-linear;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: backgrond-color 500ms;
+}
+
+#contato form button:hover{
+    background-color: var(--verde-pixelV);
 }
